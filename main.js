@@ -1,6 +1,6 @@
-// import './style.css'
+import './style.css'
 
-import * as THREE from 'https://unpkg.com/three@0.126.1/build/three.module.js'//"three"
+import * as THREE from "three" //'https://unpkg.com/three@0.126.1/build/three.module.js'//
 
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 
