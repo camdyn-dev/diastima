@@ -39,7 +39,7 @@ const moon = new THREE.Mesh(
   new THREE.MeshStandardMaterial({ map: moonTexture })
 )
 
-const jupiterTexture = new THREE.TextureLoader().load("jupiter.jpg")
+const jupiterTexture = new THREE.TextureLoader().load("jupiter2.jpg")
 const jupiter = new THREE.Mesh(
   new THREE.SphereGeometry(110, 32, 32),
   new THREE.MeshStandardMaterial({ map: jupiterTexture })

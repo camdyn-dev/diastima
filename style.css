@@ -22,7 +22,6 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  color: grey;
   width: 100vw;
   z-index: 99;
   position: absolute;
@@ -34,8 +33,12 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
-
-
+h1{
+  color: darkgrey;
+}
+h2, h3{
+  color: aliceblue;
+}
 
   header {
     background: transparent;
@@ -49,10 +52,15 @@ main {
   section {
     grid-column: 2 / 7;
     padding: 1rem;
+    color: grey;
     background: var(--dark-bg);
     font-size: 1.25rem;
     line-height: 1.5;
     margin-bottom: var(--spacing);
+  }
+  section a{
+    color: aliceblue;
+    text-decoration: none;
   }
 
   blockquote {
