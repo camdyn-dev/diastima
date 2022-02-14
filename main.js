@@ -1,8 +1,8 @@
 import './style.css'
 
-import * as THREE from "three"
+import * as THREE from 'https://unpkg.com/three@0.126.1/build/three.module.js'//"three"
 
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
+// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls"
 
 const scene = new THREE.Scene()
 
@@ -80,7 +80,7 @@ scene.add(pointLight)
 // const gridHelper = new THREE.GridHelper(2000, 50) //this creates a grid
 // scene.add(lightHelper, gridHelper) //shows where the point light is and what direction it points
 
-const controls = new OrbitControls(camera, renderer.domElement) //this creates a control for me to move around and view that grid in 35
+// const controls = new OrbitControls(camera, renderer.domElement) //this creates a control for me to move around and view that grid in 35
 
 
 const spaceTexture = new THREE.TextureLoader().load("img/space.jpg")
