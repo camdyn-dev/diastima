@@ -1,11 +1,10 @@
-// import './style.css'
+import * as THREE from "./src/Three.js" // DO NOT CHANGE THIS
 
-import * as THREE from "./src/Three.js" //'https://unpkg.com/three@0.126.1/build/three.module.js'//
+import { OrbitControls } from "./OrbitControls.js" // DO NOT CHANGE THIS
 
-import { OrbitControls } from "./OrbitControls.js"
+//Making these imports work probably sliced 45 minutes off of my lifespan. CDNs do not properly work to import orbitalcontrols, and I really wanted to have this on GitHub instead of Heroku.
 
 const scene = new THREE.Scene()
-
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
 
@@ -19,19 +18,13 @@ renderer.setSize(window.innerWidth, window.innerHeight)
 renderer.render(scene, camera)
 
 
-
-// const geometry = new THREE.TorusGeometry(10, 3, 16, 100) //this decides what shape the object takes
-// const material = new THREE.MeshPhongMaterial({ color: 0xA020F0 }) //this decides the material of that shape
-// const torus = new THREE.Mesh(geometry, material) //this instantiates the shape
-
-// scene.add(torus)
 const earthTexture = new THREE.TextureLoader().load("img/earf.jpg")
 const earthNormal = new THREE.TextureLoader().load("img/earfNormal.jpg")
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(10, 32, 32),
   new THREE.MeshStandardMaterial({ map: earthTexture, normal: earthNormal })
 )
-const earthOrbit = new THREE.Object3D()
+const earthOrbit = new THREE.Object3D() //adding the earth pull for the moon to orbit around
 
 const moonTexture = new THREE.TextureLoader().load("img/moon.jpg")
 const moon = new THREE.Mesh(
@@ -59,7 +52,7 @@ earthOrbit.add(moon) //making the moon orbit earf
 earthOrbit.position.z = -1 //offsetting the earth a bit for the camera
 earth.position.z = -1 //same here
 
-mars.position.z = -250
+mars.position.z = -250 //mars positioning
 mars.position.x = -150
 mars.position.y = -30
 
@@ -76,11 +69,8 @@ const pointLight = new THREE.PointLight(0xffffff)
 pointLight.position.set(250, 0, 0) //lightbulb. set it's position on the x y z axis
 scene.add(pointLight)
 
-// const lightHelper = new THREE.PointLightHelper(pointLight)
-// const gridHelper = new THREE.GridHelper(2000, 50) //this creates a grid
-// scene.add(lightHelper, gridHelper) //shows where the point light is and what direction it points
-
 const controls = new OrbitControls(camera, renderer.domElement) //this creates a control for me to move around and view that grid in 35
+//DO NOT REMOVE THIS - for some reason, the camera does not position correclty without it
 
 
 const spaceTexture = new THREE.TextureLoader().load("img/space.jpg")
@@ -112,19 +102,11 @@ document.body.onscroll = moveCamera
 const animate = () => {
   requestAnimationFrame(animate)
 
-  // torus.rotation.x += 0.01 //rotation for the object
-  // torus.rotation.y += 0.01
-  // torus.rotation.z += 0.01
   earth.rotateY(0.0005) // one rotation in 1 min 45 secs
-  mars.rotateY(0.00049)
-  moon.rotateY(0.00001785) // now I think this should do one rotation every like 50 mins
-  earthOrbit.rotateY(0.00001785)
-  jupiter.rotateY(0.0012)
-
-
-  // mars.rotateY(0.0004) //mars days r a lil longer so i do dat
-
-  // controls.update() //updates the controls to add the orbitcontrols
+  mars.rotateY(0.00049) //lil slower since mars has longer days
+  moon.rotateY(0.00001785) // makes the moon have a full rotation every like 50 mins
+  earthOrbit.rotateY(0.00001785) //makes the moon orbit the earth once every 50 mins
+  jupiter.rotateY(0.0012) // jupiter has like 9 hour days so I made it rotate accordingly (not perfectly tho)
 
   renderer.render(scene, camera)
   document.body.scroll({
