@@ -22,7 +22,6 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 58px;
   color: grey;
   width: 100vw;
   z-index: 99;
@@ -64,9 +63,8 @@ main {
   }
 
   blockquote p {
-    color: black;
-    background-color: grey;
-    font-size: 4rem;
+    color: grey;
+    font-size: 2rem;
     display: inline;
     line-height: 1;
   }
