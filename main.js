@@ -25,27 +25,27 @@ renderer.render(scene, camera)
 // const torus = new THREE.Mesh(geometry, material) //this instantiates the shape
 
 // scene.add(torus)
-const earthTexture = new THREE.TextureLoader().load("earf.jpg")
-const earthNormal = new THREE.TextureLoader().load("earfNormal.jpg")
+const earthTexture = new THREE.TextureLoader().load("img/earf.jpg")
+const earthNormal = new THREE.TextureLoader().load("img/earfNormal.jpg")
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(10, 32, 32),
   new THREE.MeshStandardMaterial({ map: earthTexture, normal: earthNormal })
 )
 const earthOrbit = new THREE.Object3D()
 
-const moonTexture = new THREE.TextureLoader().load("moon.jpg")
+const moonTexture = new THREE.TextureLoader().load("img/moon.jpg")
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(2.5, 32, 32),
   new THREE.MeshStandardMaterial({ map: moonTexture })
 )
 
-const jupiterTexture = new THREE.TextureLoader().load("jupiter2.jpg")
+const jupiterTexture = new THREE.TextureLoader().load("img/jupiter2.jpg")
 const jupiter = new THREE.Mesh(
   new THREE.SphereGeometry(110, 32, 32),
   new THREE.MeshStandardMaterial({ map: jupiterTexture })
 )
 
-const marsTexture = new THREE.TextureLoader().load("mars2.jpg")
+const marsTexture = new THREE.TextureLoader().load("img/mars2.jpg")
 const mars = new THREE.Mesh(
   new THREE.SphereGeometry(5, 32, 32),
   new THREE.MeshStandardMaterial({ map: marsTexture })
@@ -83,7 +83,7 @@ scene.add(pointLight)
 const controls = new OrbitControls(camera, renderer.domElement) //this creates a control for me to move around and view that grid in 35
 
 
-const spaceTexture = new THREE.TextureLoader().load("space.jpg")
+const spaceTexture = new THREE.TextureLoader().load("img/space.jpg")
 scene.background = spaceTexture
 let t = document.body.getBoundingClientRect().top
 
