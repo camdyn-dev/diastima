@@ -23,9 +23,8 @@ main {
   top: 0;
   left: 0;
   font-size: 58px;
-  color: black;
-  /* width: 100vw;
-  color: white;
+  color: grey;
+  width: 100vw;
   z-index: 99;
   position: absolute;
   width: 100%;
@@ -33,33 +32,23 @@ main {
   padding: 120px 0px;
   
   display: grid;
-  grid-template-columns: repeat(12, 1fr); */
+  grid-template-columns: repeat(12, 1fr);
 }
 
-/* h1, h2, h3, blockquote {
-  font-family: elevon, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-} */
 
 
 
-  /* header {
-    background: var(--dark-bg);
-    grid-column: 2 / span 5;
-    font-size: 2.5rem;
+  header {
+    background: transparent;
+    grid-column: 2 / span 6;
+    font-size: 2rem;
     padding: 2rem;
     margin-bottom: var(--spacing);
+    font-family: 'Space Mono', monospace;;
   }
 
   section {
-    grid-column: 2 / 8;
+    grid-column: 2 / 7;
     padding: 1rem;
     background: var(--dark-bg);
     font-size: 1.25rem;
@@ -70,13 +59,13 @@ canvas {
   blockquote {
     margin: 0;
     padding: 0;
-    grid-column: 2 / span 9;
+    grid-column: 2 / span 8;
     margin-bottom: var(--spacing);
   }
 
   blockquote p {
     color: black;
-    background-color: white;
+    background-color: grey;
     font-size: 4rem;
     display: inline;
     line-height: 1;
@@ -84,4 +73,4 @@ canvas {
 
   .left {
     grid-column: 6 / 12;
-  } */
+  }
