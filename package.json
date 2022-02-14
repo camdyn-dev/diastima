@@ -11,6 +11,7 @@
     "vite": "^2.8.0"
   },
   "dependencies": {
+    "express": "^4.17.2",
     "three": "^0.137.5"
   }
 }

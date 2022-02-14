@@ -103,7 +103,6 @@ function moveCamera() {
   camera.position.x = t * -.006 + 7
   camera.position.y = t * -.0001 + 0
   camera.position.z = t * -.0001 + 15
-  console.log(camera.position)
 }
 
 document.body.onscroll = moveCamera
@@ -121,7 +120,6 @@ const animate = () => {
   moon.rotateY(0.00001785) // now I think this should do one rotation every like 50 mins
   earthOrbit.rotateY(0.00001785)
   jupiter.rotateY(0.0012)
-  console.log(camera.position)
 
 
   // mars.rotateY(0.0004) //mars days r a lil longer so i do dat
