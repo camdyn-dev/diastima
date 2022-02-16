@@ -1,6 +1,10 @@
 
 @import url("https://use.typekit.net/jmk3xov.css");
 
+html{
+  background-color: black;
+}
+
 canvas {
   position: fixed;
   top: 0;
@@ -32,7 +36,7 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
-h1{
+h1, div h4{
   color: darkgrey;
 }
 h2, h3{

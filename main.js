@@ -3,7 +3,6 @@ import * as THREE from "./src/Three.js" // DO NOT CHANGE THIS
 import { OrbitControls } from "./OrbitControls.js" // DO NOT CHANGE THIS
 
 //Making these imports work probably sliced 45 minutes off of my lifespan. CDNs do not properly work to import orbitalcontrols, and I really wanted to have this on GitHub instead of Heroku.
-
 const scene = new THREE.Scene()
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
@@ -114,4 +113,17 @@ const animate = () => {
   })
 }
 
+
+
 animate()
+
+
+window.addEventListener("load", function (e) { //FANTASTICAL - didn't know there was a load event. great for making sure everything loads before displaying
+  const main = document.querySelector("main")
+  const canvas = document.querySelector("#bg")
+  const loading = document.querySelector("#loading")
+  loading.style.display = "none"
+  canvas.style.display = ""
+  main.style.display = ""
+})
+
