@@ -2,7 +2,7 @@
 # diastima
 This is my portfolio that I made using Three.Js. I spent a night or so making it, and I think it turned out pretty well.
 
-Something that's cool that I worked in is that the planets rotate around the sun at the same rate they do in real life, relative to one another. What I mean by that is I coded the Earth to make a full rotation around the Sun within this project every two mintues, and set every other planet and mimic that rate. It looks roughly like this
+Something that's cool that I worked in is that the planets rotate around the sun at the same rate they do in real life, relative to one another. What I mean by that is I coded the Earth to make a full rotation around its axis within this project every two mintues, and set every other planet and mimic that rate. It looks roughly like this
 
 | Planet/Moon | IRL Time            | Website Time            |
 |-------------|---------------------|-------------------------|
