@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" type="image/svg+xml" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>space - c.b</title>
+    <title>diastima - camdyn b.</title>
     <!-- <link rel="stylesheet" href="./style.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +19,7 @@
   <body>
     <div id="loading" style="text-align: center">
       <h1>Loading...</h1>
-      <h4>(make sure your device is horizontal!)</h4>
+      <h4>(make sure your device is horizontal)</h4>
     </div>
     <canvas id="bg" style="display: none"></canvas>
 
@@ -32,24 +32,26 @@
         <h2>Hello!</h2>
         <p>
           <a href="https://www.linkedin.com/in/camdynbordelon/">LinkedIn</a> |
-          <a href="https://github.com/camdyn-dev">Github</a> |
+          <a href="https://github.com/camdyn-dev">GitHub</a> |
           <a href="mailto:camdyn@tutanota.com">Email</a>
 
           <br />
           <br />
-          I'm Camdyn Bordelon. I'm currently a student pursuing furhter education in Comptuer Science. Currently, I have an Associates in Computer Science from Cosumnes River College (CRC) (started 01/22, acquired 12/23). I'm pursuing an Associates in Economics at CRC, (expected 12/24), as well as a Bachelors Degree in Computer Science at CSU Monterey Bay.
+          I'm Camdyn Bordelon. I'm a recent graduate at Western Governors University (March 2025), achieving a Bachelor's degree in Computer Science.
           <br /><br />
-          I quite enjoy statistics, as well as programming, which led me to pursing a degree in Computer Science and Economics. Data is particularly fascinating, and the combination of the two in database applications is where I'd like to eventually have a career.
-          <br />
-          <br />
+          I quite enjoy statistics, as well as programming, which led me to pursing that degree in Computer Science. Data is particularly fascinating to me, leading to my interest in database applications, data analytics and machine learning.
+          <br /><br />
+          Outside of work and education, I enjoy lifting weights, watching movies, and spending time outdoors. I especially enjoy being in nature; nothing beats sunshine and fresh air.
+ 
+          <!-- <br />
           Languages: Javascript, Java, Python, C++, C#, SQL
           <br />
           Databases: MySQL/Postegres, MongoDB
           <br />
-          Frameworks: React, Node.js/Express
+          Frameworks: React, Angular, Node.js/Express
           <br />
-          Tools: Git/Github, MatplotLib, Pandas, Seaborn
-          <br /><br />
+          Tools: Git/Github, MatplotLib, Pandas, MatPlotLib, Seaborne
+          <br /><br /> -->
           
           <br />
           <br />
@@ -61,8 +63,8 @@
       <section>
         <h2>Larger Projects</h2>
         <p>
-          Source code for all of these projects (and others) can be found on my
-          <a href="https://github.com/camdyn-dev">GitHub</a>.
+          <span style="font-size: medium;">Source code for all of these projects (and others) can be found on my
+          <a href="https://github.com/camdyn-dev">GitHub</a>.</span>
         </p>
         <p>
           <a href="https://github.com/camdyn-dev/clickstop"
@@ -70,18 +72,30 @@
           >
         </p>
         <p>
-          I created ClickStop a little while after finishing a programming
-          bootcamp to test the skills that I learned. It uses MongoDb, Express,
-          Node.js and handles payments with Paypal, as I didn't know Stripe at
-          the time.
+          ClickStop was the first significant project that truly tested my programming skills. I decided to create it after finishing a programming boot camp, 
+          and I'm delighted that I did; it greatly developed my programming and problem-solving skills.
           <br />
           <br />
-          It features an authentication system using B-Crypt (instead of a
-          library like Passport), allowing account creation, reviews and order
-          history. To prevent spam, I implemented a mailing system that requires
-          accounts to be verified before posting reviews. There's also a
-          back-end management system that allows me to create, edit and delete
-          item postings.
+          ClickStop is an E-Commerce web application that uses JavaScript and HTML/CSS on the front end, with Express, Node.Js, and MongoDB on the back end. 
+          It features an authentication and authorization system using B-Crypt, which enables account creation, item reviews, and order history. To prevent spam, 
+          I implemented two-factor authentication with a mail system written with NodeMailer that requires accounts to be verified before posting item reviews. 
+          Furthermore, an administrative back-end system allows me to create, edit, update, and delete item postings and view sales data.
+        </p>
+        <br />
+        <p>
+          <a href="https://github.com/camdyn-dev/csei"
+            >CSEI - An AI/ML program that predicts coffee shop revenue</a
+          >
+        </p>
+        <p>
+          There was a significant focus on AI/ML during my bachelor's degree's final classes, leading to this program's creation. 
+          We were tasked with building an advanced AI/ML program that tackles a real-world problem. Since 
+          I've spent a large portion of my young adult years working in coffee shops, this was close to my heart.
+          <br />
+          <br />
+          This program implements a Random Forest trained regression model with strong hyperparameter tuning (i.e., Grid Search) to predict a shop's daily revenue based on key operational parameters (e.g., locational foot traffic, number of customers, 
+          marketing expenditure), thus allowing management to improve efficiency in those parameters. This solution was implemented in Python
+          with Pandas and Scikit Learn.
         </p>
         <br />
         <p>
@@ -90,52 +104,69 @@
           >
         </p>
         <p>
-          After picking up React, I decided to test out the skills by making a
-          complex, but useful application. It uses React with MUI on the
-          front-end, and Express with MySQL for the back-end.
+          After familiarizing myself with React, I decided it would be appropriate to develop those skills further by creating a 
+          practical yet challenging application. That pursuit led to a game backlog tracking application with React and MUI on the front end 
+          and Express with MySQL on the back end.
           <br />
           <br />
           It supports a variety of filtering and sorting options that are made
-          possible by the rating system that I've implemented. You can rate
-          games by priority, completion status and quality, then only show games
-          based off of those. Each game has it's own list of notes that allows
-          you to track finer things, such as "wow, level 2 SUCKED", or "don't
-          forget the secret room in level 4". If I'm honest, designing and
-          implementing the sorting system was a pain in the behind.
+ possible by the rating system that I've implemented. You can rate
+ games by priority, completion status, and quality, then only show games
+ based on those. Each game has its list of notes that allows
+ you to track finer things, such as "wow, level 2 SUCKED" or "don't
+ forget the secret room in level 4".
         </p>
         <br />
         <p>
-          <a href="https://camdyn-dev.github.io/apollo14/"
+          <a href="https://camdyn-dev.github.io/diastima/"
             >diastima - This website!</a
           >
         </p>
 
         <p>
-          There wasn't anything really special behind this; I found out what
-          Three.JS was one night and thought it'd be fun to experiment with.
-          That's especially apparent in the name I chose for this.
+          If I'm honest, this project exists because I found a YouTube video on Three.Js that was quite interesting. This led to the thought, "Wow, a portfolio that 
+          implements Three.Js would be quite beautiful", which, in turn, led to this website.
           <br />
           <br />
-          An interesting little detail though; the planets on here have the same
-          (relative) rotational speed as in real life. Earth takes about a
-          minute and 45 seconds to make a full rotation on it's axis, with Mars
-          rotating a little slower, and Jupiter more than twice as fast. The
-          moon takes about 50 minutes to rotate on it's axis, and make a full
-          rotation around Earth.
+          An interesting detail I'd like to mention is that the planets on here have the same (relative) rotational speed as in real life. Earth takes about a 
+          minute and 45 seconds to make a complete rotation on its axis, with Mars rotating a little slower and Jupiter more than twice as fast. The 
+          moon takes about 50 minutes to rotate on its axis and fully rotate around Earth.
         </p>
       </section>
 
       <section>
-        <h2>Education and Certifications</h2>
+        <h2>Education</h2>
         <p>
-          <h3>Associates Degree in Computer Science, GPA: 3.96</h3>
-          <br />
-          Relevant coursework includes: Algorithm Design, Structured Programming (C/C++), Assembly Language, Objected Oriented Programming (C++, Java), Data Structures, Discrete Mathematics.
-          <br />
-          <br />
-          I am CompTIA A+, Network+ and Security+ certified, as well as an Associate of (ISC)2.
+          <h3>Western Governors University<br>
+            Bachelor's Degree in Computer Science
+          </h3>
+          This degree included a significant focus on AI/ML, setting it aside from most programs that haven't yet begun teaching it. <br>
+          Notable coursework includes: <br>
+          D687 - Computer Science Project Development with a Team <br>
+          D683 - Advanced AI and Machine Learning <br>
+          D682 - Artificial Intelligence Optimization
+          <h3>Cosumnes River College<br>
+            Associate's Degree in Computer Science
+          </h3>
+
+          Notable coursework includes: <br>
+          CISP 310 - Assembly Language Programming <br>
+          CISP 430 - Data Structures and Algorithms <br>
+          CISP 440 - Discrete Structures for Computer Science <br>
+          MATH 400 - Calculus I & MATH 401 - Calculus II
           <br>
         </p>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <p>
+          <h3>Associate of (ISC)2</h3>
+          <h3>CompTIA A+, Network+ and Security+</h3>
+          <h3>LPI - Linux Essentials</h3>
+          <span style="font-size: medium;">All certifications can be verified <a href="https://www.credly.com/users/camdyn-bordelon">here</a>.</span>
+        </p>
+        
       </section>
 
       <blockquote>
